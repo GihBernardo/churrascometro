@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale= 1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link rel="icon" href="../images/bbq.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Lato:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Churrascômetro</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Churrascômetro</h1>
+            <input
+                type="number"
+                name="homens"
+                id="homens"
+                placeholder="Quantos Homens?"
+            />
+            <input
+                type="number"
+                name="mulheres"
+                id="mulheres"
+                placeholder="Quantas Mulheres?"
+            />
+            <input
+                type="number"
+                name="criancas"
+                id="criancas"
+                placeholder="Quantas Crianças?"
+            />
+            <input
+                type="number"
+                name="veganos"
+                id="veganos"
+                placeholder="Quantas pessoas são veganas/vegetarianas?"
+            />
+            <input
+                type="number"
+                name="bebem"
+                id="bebem"
+                placeholder="Quantas pessoas bebem bebidas alcoólicas?"
+            />
+            <input
+                type="number"
+                name="duracao"
+                id="duracao"
+                placeholder="Duração (hrs)"
+            />
+            <div class="checkbox_carvao">
+                <p>É churrasqueira a carvão?</p>
+                <label>
+                    <input type="checkbox" id="s" name="s" />
+                    Sim
+                </label>
+                <label>
+                    <input type="checkbox" id="n" name="n" />
+                    Não
+                </label>
+            </div class="checkbox_acomp">
+                <p>Irá servir acompanhamentos?</p>
+                <label>
+                    <input type="checkbox" id="sim" name="sim" />
+                    Sim
+                </label>
+                <label>
+                    <input type="checkbox" id="nao" name="nao" />
+                    Não
+                </label>
+            <div >
+
+            </div>
+            <button onclick="calc()">Calcular</button>
+        </div>
+        <div id="result"></div>
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>
